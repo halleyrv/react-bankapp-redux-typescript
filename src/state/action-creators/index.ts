@@ -20,11 +20,10 @@ export const withDrawMoney = (amount: number) => {
   }
 }
 
-export const bankRupt = (amount: number) => {
+export const bankRupt = () => {
   return (dispatch: Dispatch) =>{
     dispatch({
       type: ActionType.BANKRUPT,
-      payload: amount
     })
   }
 }  
